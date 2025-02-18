@@ -12,10 +12,19 @@ public class Chiamata {
         this.durata = randomdur();
 
     }
-  public  String stampchiamata() {
-        //System.out.println(this.numchiamata);
+
+    public String getNumchiamata() {
         return this.numchiamata;
-  }
+    }
+
+    public double getDurata() {
+        return this.durata;
+    }
+
+    public  String stampchiamata() {
+        //System.out.println(this.numchiamata);
+        return this.numchiamata+" "+this.durata;
+    }
     public double randomdur(){
         double min=Math.random()*10;
         return min;
