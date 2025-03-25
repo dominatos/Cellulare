@@ -13,3 +13,6 @@ La classe SIM dovrà fornire le seguenti funzionalità:
 - un metodo per ricaricare il credito
 
 Scrivere un main che crei una istanza di SIM, ne stampi i dati e simuli il funzionamento.
+
+VERSIONE con "menu":
+https://github.com/dominatos/Cellulare-con_menu
