@@ -4,7 +4,11 @@ public class Chiamata {
     public String numchiamata;
     public double durata;
 
+    public Chiamata() {
+        this.numchiamata = "non e fatta la chiamata";
+        this.durata = 0;
 
+    }
 
 
     public Chiamata(String numchiamata ) {
@@ -23,7 +27,7 @@ public class Chiamata {
 
     public  String stampchiamata() {
         //System.out.println(this.numchiamata);
-        return this.numchiamata+" "+this.durata;
+        return "Numero: "+this.numchiamata+"\nDurata: "+this.durata;
     }
     public double randomdur(){
         double min=Math.random()*10;

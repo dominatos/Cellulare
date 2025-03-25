@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 SIM one= new SIM("34234234");
 one.info();
-one.ricarica(5);
+one.ricarica(2);
 
 //        Chiamata c1 = new Chiamata("1111");
 //
@@ -37,7 +37,7 @@ one.ricarica(5);
             one.effetuachiama(arrch[i]);
         }
 
-one.info();
+        one.info();
 
 
             //System.out.println("********************************");
