@@ -1,4 +1,5 @@
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Chiamata {
     public String numchiamata;
@@ -27,7 +28,9 @@ public class Chiamata {
 
     public  String stampchiamata() {
         //System.out.println(this.numchiamata);
-        return "Numero: "+this.numchiamata+"\nDurata: "+this.durata;
+        BigDecimal bdDUr = new BigDecimal(this.durata);
+        bdDUr = bdDUr.setScale(2, RoundingMode.HALF_UP);
+        return "Numero: "+this.numchiamata+"\nDurata: "+bdDUr;
     }
     public double randomdur(){
         double min=Math.random()*10;
